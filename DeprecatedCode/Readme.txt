@@ -1,0 +1,3 @@
+Obsolete code should be put in a ZIP file, and placed here. Then, whoever wants to access the old code can look in the ZIP files. The deleted code will still be in Perforce, but it is less obvious how to get to it, when it is invisible.
+
+The reason it should go here, is that it will reduce the maintenance load. A lot of obsolete code in 'Src' is being revised, because we search too well, even though it is not being built, or never has been part of the main build process.
