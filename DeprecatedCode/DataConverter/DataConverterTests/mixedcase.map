@@ -1,0 +1,81 @@
+;data.map
+;Copyright (c) 2002 SIL International.
+
+EncodingName	'MIXEDCASE'
+DescriptiveName	'Mixed Case'
+
+ByteDefault		'?'
+UniDefault		replacement_character
+
+ByteClass [control] = ( 0x00 .. 0x1F )
+UniClass [control] = ( U+0000 .. U+001F )
+ByteClass [below] = ( 0x21 .. 0x40 )
+UniClass [below] = ( U+0021 .. U+0040 )
+ByteClass [middle] = ( 0x5B .. 0x60 )
+UniClass [middle] = ( U+005B .. U+0060 )
+ByteClass [above] = ( 0x7B .. 0xFF )
+UniClass [above] = ( U+007B .. U+00FF )
+
+[control]	<>	[control]
+[below]	<>	[below]
+[middle]	<>	[middle]
+[above]	<>	[above]
+
+; space to three tildes
+0x20	<>	U+007E U+007E U+007E
+
+; upper case to lower case
+0x41	<>	U+0061
+0x42	<>	U+0062
+0x43	<>	U+0063
+0x44	<>	U+0064
+0x45	<>	U+0065
+0x46	<>	U+0066
+0x47	<>	U+0067
+0x48	<>	U+0068
+0x49	<>	U+0069
+0x4a	<>	U+006a
+0x4b	<>	U+006b
+0x4c	<>	U+006c
+0x4d	<>	U+006d
+0x4e	<>	U+006e
+0x4f	<>	U+006f
+0x50	<>	U+0070
+0x51	<>	U+0071
+0x52	<>	U+0072
+0x53	<>	U+0073
+0x54	<>	U+0074
+0x55	<>	U+0075
+0x56	<>	U+0076
+0x57	<>	U+0077
+0x58	<>	U+0078
+0x59	<>	U+0079
+0x5a	<>	U+007a
+
+;lower case to upper case
+0x61	<>	U+0041
+0x62	<>	U+0042
+0x63	<>	U+0043
+0x64	<>	U+0044
+0x65	<>	U+0045
+0x66	<>	U+0046
+0x67	<>	U+0047
+0x68	<>	U+0048
+0x69	<>	U+0049
+0x6a	<>	U+004a
+0x6b	<>	U+004b
+0x6c	<>	U+004c
+0x6d	<>	U+004d
+0x6e	<>	U+004e
+0x6f	<>	U+004f
+0x70	<>	U+0050
+0x71	<>	U+0051
+0x72	<>	U+0052
+0x73	<>	U+0053
+0x74	<>	U+0054
+0x75	<>	U+0055
+0x76	<>	U+0056
+0x77	<>	U+0057
+0x78	<>	U+0058
+0x79	<>	U+0059
+0x7a	<>	U+005a
